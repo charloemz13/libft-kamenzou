@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:08:29 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/15 15:40:20 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:56:39 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,10 @@ char **ft_split(char const *s, char c)
         z++;
     }
     results[z] = NULL;
+    while(rese)
+    {
+        
+    }
     return results;
 }
 
