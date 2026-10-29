@@ -6,13 +6,13 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:04:54 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/12 15:05:44 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/10/29 12:27:27 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c) {
-    if (c >= 0 && c <= 127) {
-        return 1;
-    }
-    return 0;
+#include "libft.h"
+
+int ft_isascii(int c)
+{
+    return (c >= 0 && c <= 127);
 }

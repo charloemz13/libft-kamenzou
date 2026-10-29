@@ -6,56 +6,42 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 15:40:54 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/15 16:25:43 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/10/29 12:38:51 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
-char    *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    char *str;
-    int i;
-    int nb;
-    int len;
+	char	*str;
+	long	nb;
+	int		len;
+	int		sign;
 
-    len = 0;
-    i = 0;
-    nb = n;
-    if(nb < 0)
-    {
-        i++;
-        nb = -nb;
-        n = -n;
-        len++;
-    }
-    while(nb)
-    {
-        nb = nb / 10;
-        len++;
-    }
-    str = malloc(len + 1);
-   
-    if(i)
-        str[i - 1] = '-';
-    
-    while(len - i)
-    {
-        
-        
-        str[len - 1] = (n % 10) + '0';
-        n = n / 10;
-        len--;
-    }
-    
-    return str;   
-}
-
-int main()
-{
-    char *str;
-    //printf("%s\n", str);
-    printf("res is : %s\n", ft_itoa(-332110));
-    return 0;
+	nb = n;
+	sign = (nb < 0);
+	if (sign)
+		nb = -nb;
+	len = 1;
+	while (nb / 10 >= 1)
+	{
+		nb = nb / 10;
+		len++;
+	}
+	str = (char *)malloc(len + sign + 1);
+	if (!str)
+		return (NULL);
+	nb = n;
+	if (sign)
+		nb = -nb;
+	str[len + sign] = '\0';
+	while (len--)
+	{
+		str[sign + len] = (nb % 10) + '0';
+		nb = nb / 10;
+	}
+	if (sign)
+		str[0] = '-';
+	return (str);
 }

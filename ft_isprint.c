@@ -6,13 +6,13 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:23:55 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/12 15:24:48 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/10/29 12:33:04 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
 int ft_isprint(int c)
 {
-    if(c >= 32 && c <= 126)
-        return 1;
-    return 0;
+    return (c >= 32 && c <= 126);
 }

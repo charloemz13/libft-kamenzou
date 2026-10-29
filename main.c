@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 19:55:16 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/17 20:05:00 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/10/26 10:31:40 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,5 @@ int main()
         printf("string is : %s\n", (char *)(listiter->content));
         listiter = listiter->next;
     }
+    char *test_last = ft_
 }
