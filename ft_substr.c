@@ -6,12 +6,11 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:08:20 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/14 15:18:16 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:31:56 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 char    *ft_substr(char const *s, unsigned int start, size_t len)
 {

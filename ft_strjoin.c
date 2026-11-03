@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:20:17 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/14 15:51:40 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:32:37 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,4 @@ char    *ft_strjoin(char const *s1, char const *s2)
         j++;
     }
     return joinedstr;
-}
-
-int main()
-{
-    char *test = ft_strjoin("test", "ft");
-    printf("res : %s\n", test);    
 }

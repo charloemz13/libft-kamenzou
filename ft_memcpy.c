@@ -6,11 +6,11 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:24:46 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/29 12:09:24 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:34:05 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void *ft_memcpy(void *dest, const void *src, size_t n)
 {

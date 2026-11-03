@@ -6,11 +6,11 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 12:56:29 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/16 13:02:18 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:33:55 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void    ft_putchar_fd(char c, int fd)
 {

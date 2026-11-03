@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 19:55:16 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/26 10:31:40 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 02:16:54 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void del(void *content)
 
 int main()
 {
-    int number = 12;
+    /*int number = 12;
     int number2 = 10;
     int number3 = 33;
     t_list *lst = ft_lstnew(&number);
@@ -57,5 +57,13 @@ int main()
         printf("string is : %s\n", (char *)(listiter->content));
         listiter = listiter->next;
     }
-    char *test_last = ft_
+    char *test_last = ft_*/
+    char dst[12] = "test";
+    char src[10] = "okok";
+    char sre[] = "";
+    char *ptr = "";
+    printf("%s\n", dst);
+    printf("%zu\n", sizeof(dst));
+    printf("%zu\n", sizeof(sre));
+    printf("%zu\n", sizeof(*ptr));
 }

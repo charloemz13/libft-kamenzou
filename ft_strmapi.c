@@ -6,13 +6,12 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 15:55:04 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/16 12:34:32 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:32:23 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
+
 char add_index(unsigned i, char c)
 {
     return c + i;

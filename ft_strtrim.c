@@ -6,13 +6,11 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:52:24 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/14 17:28:47 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:32:09 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int in_set(char c, char const *set)
 {
@@ -64,10 +62,4 @@ char    *ft_strtrim(char const *s1, char const *set)
         }
     }
     return trimstr;
-}
-
-int main()
-{
-    printf("%d\n", ft_strlen("khalid"));
-    printf("%s\n", ft_strtrim("khalid", "ad"));
 }

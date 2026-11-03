@@ -6,11 +6,11 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:36:53 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/13 22:24:40 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:34:10 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void    *ft_memmove(void *dest, void *src, size_t n)
 {
@@ -38,12 +38,4 @@ void    *ft_memmove(void *dest, void *src, size_t n)
         }
     }
     return dest;
-}
-
-int main()
-{
-    char dest[5];
-    char *new_dest = ft_memmove(dest, "khali", 5);
-    printf("%s\n", new_dest);
-    printf("string after memmove is : %s\n", dest);
 }

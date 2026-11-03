@@ -6,52 +6,87 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:08:29 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/29 12:26:30 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 02:41:25 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
-char **ft_split(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
-    char **results = malloc(sizeof(char *) * 1024);
-    int i = 0;
-    int z = 0;
-    int y = 0;
-    int j;
+	size_t	count;
+	size_t	i;
+	int		in_word;
 
-    while(s[i])
-    {
-        j = 0;
-        y = 0;
-        while(s[i] == c && s[i])
-            i++;
-        results[z] = malloc(1024);
-        while (s[i] != c && s[i])
-        {
-            results[z][y] = s[i];
-            i++;
-            y++;
-        }
-        i++;
-        z++;
-    }
-    results[z] = NULL;
-    while(rese)
-    {
-        
-    }
-    return results;
+	if (!s)
+		return (0);
+	in_word = 0;
+	count = 0;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] != c && !in_word)
+		{
+			in_word = 1;
+			count++;
+		}
+		else if (s[i] == c)
+			in_word = 0;
+		i++;
+	}
+	return (count);
 }
 
-int main()
+static void	free_all(char **arr, size_t n)
 {
-    char **res = ft_split("   my gf is a goatt   \0", ' ');
-    int i = 0;
-    while(res[i])
-    {
-        printf("res %d is : %s\n", i, res[i]);
-        i++;
-    }     
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+		free(arr[i++]);
+	free(arr);
+}
+
+static char	**fill_array(char **arr, const char *s, char c, size_t count)
+{
+	size_t	start;
+	size_t	end;
+	size_t	i;
+
+	end = 0;
+	i = 0;
+	while (i < count)
+	{
+		while (s[end] == c && s[end])
+			end++;
+		start = end;
+		while (s[end] != c && s[end])
+			end++;
+		arr[i] = ft_substr(s, start, end - start);
+		if (!arr[i])
+		{
+			free_all(arr, i);
+			return (NULL);
+		}
+		i++;
+	}
+	return (arr);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	size_t	words_count;
+	char	**str_arr;
+
+	if (!s)
+		return (NULL);
+	words_count = count_words(s, c);
+	str_arr = (char **)malloc(sizeof(char *) * (words_count + 1));
+	if (!str_arr)
+		return (NULL);
+	str_arr[words_count] = NULL;
+	str_arr = fill_array(str_arr, s, c, words_count);
+	if (!str_arr)
+		return (NULL);
+	return (str_arr);
 }

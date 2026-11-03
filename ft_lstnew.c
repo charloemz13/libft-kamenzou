@@ -6,13 +6,11 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 14:22:54 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/16 21:26:49 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:34:20 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 t_list  *ft_lstnew(void *content)
 {
