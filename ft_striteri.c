@@ -6,18 +6,13 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 12:45:57 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 10:33:02 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:42:25 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    pass_index(unsigned int i, char *c)
-{
-    *c = *c + i;
-}
-
-void    *ft_striteri(char *s, void (*f)(unsigned int, char *))
+void    ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
     unsigned int i;
 

@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 21:44:22 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/16 21:49:49 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:43:44 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 unsigned int ft_lstsize(t_list *lst)
 {
-    int size;
+    unsigned int size;
 
     size = 0;
     while(lst)

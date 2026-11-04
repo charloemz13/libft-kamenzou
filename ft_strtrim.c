@@ -6,16 +6,15 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:52:24 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 10:32:09 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:39:18 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int in_set(char c, char const *set)
+static int in_set(char c, char const *set)
 {
     int set_count = 0;
-    int i = 0;
     int j = 0;
     
     while(set[j])

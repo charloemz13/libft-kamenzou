@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 01:08:20 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 02:23:10 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:32:27 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t  ft_strlcat(char *dst, const char    *src, size_t dstsize)
     i = 0;    
     while (src[i] != '\0' && (dst_len + i) < (dstsize - 1))
     {
-        dst[dst_len + i] == src[i];
+        dst[dst_len + i] = src[i];
         i++;
     }
     dst[dst_len + i] = '\0';

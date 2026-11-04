@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strchr.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:54:49 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 02:46:34 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:35:46 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char    *ft_strchr(const char *s, int c)
     while (*s)
     {
         if ((unsigned char)*s == (unsigned char)c)
-            return ((char *)str);
+            return ((char *)s);
         s++;
     }
     if ((unsigned char)c == 0)

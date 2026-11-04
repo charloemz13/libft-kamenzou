@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 13:14:08 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 10:33:44 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 15:49:35 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void    ft_putendl_fd(char *s, int fd)
 {
+    if (fd < 0)
+        return ;
     if (s)
     {
         while (*s)

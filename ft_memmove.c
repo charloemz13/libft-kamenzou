@@ -6,15 +6,15 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:36:53 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 10:34:10 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:31:59 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memmove(void *dest, void *src, size_t n)
+void    *ft_memmove(void *dest,const void *src, size_t n)
 {
-    int i;
+    size_t i;
     unsigned char *d = (unsigned char *)dest;
     unsigned char *s = (unsigned char *)src;
     if (d == s || n == 0)

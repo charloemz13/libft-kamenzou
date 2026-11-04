@@ -6,15 +6,15 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:30:36 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/14 16:23:18 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:27:05 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(char const *str)
+size_t ft_strlen(char const *str)
 {
-    int i;
+    size_t i;
 
     i = 0;
     while(str[i])

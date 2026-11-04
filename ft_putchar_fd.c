@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 12:56:29 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 10:33:55 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 15:49:02 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void    ft_putchar_fd(char c, int fd)
 {
+    if (fd < 0)
+        return ;
     write(fd, &c, 1);
 }

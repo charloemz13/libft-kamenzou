@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 13:18:49 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/03 10:33:16 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 15:49:50 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void    ft_putnbr_fd(int n, int fd)
     if (n == -2147483648)
     {
         write(1, "-2147483648", 11);
-        return;
+        return ;
     }
     if(n < 0)
     {
@@ -35,10 +35,4 @@ void    ft_putnbr_fd(int n, int fd)
     ft_putnbr_fd(n / 10, fd);
     c = (n % 10) + '0';
     write(fd, &c, 1);
-}
-
-int main()
-{
-    ft_putnbr_fd(-2147483648, 1);
-    return 0;
 }
