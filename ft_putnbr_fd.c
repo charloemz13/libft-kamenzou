@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 13:18:49 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/04 15:49:50 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 17:32:58 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void    ft_putnbr_fd(int n, int fd)
 {
+    if (fd < 0)
+        return ;
     char    c;
     
     if (n == -2147483648)

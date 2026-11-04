@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 13:02:46 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/04 15:45:07 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 17:32:15 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void    ft_putstr_fd(char *s, int fd)
 {
+    if (fd < 0)
+        return ;
     while(*s)
     {
         write(fd, s, 1);

@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 14:59:02 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/10/29 12:21:05 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:05:05 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int ft_isalnum(int c)
 {
-    if (ft_isalpha(c) || ft_isdigit(c))
-        return (1);
-    return (0);
+    return (ft_isalpha(c) || ft_isdigit(c));
 }
