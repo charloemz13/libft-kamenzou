@@ -6,7 +6,7 @@
 /*   By: kamenzou <kamenzou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:08:29 by kamenzou          #+#    #+#             */
-/*   Updated: 2026/11/07 16:45:17 by kamenzou         ###   ########.fr       */
+/*   Updated: 2026/11/11 14:47:22 by kamenzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,6 @@ char	**ft_split(char const *s, char c)
 	size_t	words_count;
 	char	**str_arr;
 
-	if (!s)
-		return (NULL);
 	words_count = count_words(s, c);
 	str_arr = malloc(sizeof(char *) * (words_count + 1));
 	if (!str_arr)
